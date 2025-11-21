@@ -73,14 +73,14 @@ def main():
             # Moretones
             bruises = st.selectbox(
                 "¿Tiene moretones?",
-                ['', 'yes=t', 'no=f'],
+                [ 'yes=t', 'no=f'],
                 help="Si el hongo se daña y cambia de color"
             )
             
             # Olor
             odor = st.selectbox(
                 "Olor del hongo",
-                ['', 'almond=a', 'anise=l', 'creosote=c', 'fishy=y', 'foul=f', 'musty=m', 'none=n', 'pungent=p', 'spicy=s'],
+                [ 'almond=a', 'anise=l', 'creosote=c', 'fishy=y', 'foul=f', 'musty=m', 'none=n', 'pungent=p', 'spicy=s'],
                 help="Olor que desprende el hongo",
                 index=7  # none=n por defecto
             )
@@ -90,21 +90,21 @@ def main():
             # Tamaño de lamelas
             gill_size = st.selectbox(
                 "Tamaño de lamelas",
-                ['', 'broad=b', 'narrow=n'],
+                [ 'broad=b', 'narrow=n'],
                 help="Ancho de las lamelas"
             )
             
             # Espaciado de lamelas
             gill_spacing = st.selectbox(
                 "Espaciado de lamelas",
-                ['', 'close=c', 'crowded=w', 'distant=d'],
+                [ 'close=c', 'crowded=w', 'distant=d'],
                 help="Distancia entre lamelas"
             )
             
             # Color de las lamelas
             gill_color = st.selectbox(
                 "Color de las lamelas",
-                ['', 'black=k', 'brown=n', 'buff=b', 'chocolate=h', 'gray=g', 'green=r', 'orange=o', 'pink=p', 'purple=u', 'red=e', 'white=w', 'yellow=y'],
+                [ 'black=k', 'brown=n', 'buff=b', 'chocolate=h', 'gray=g', 'green=r', 'orange=o', 'pink=p', 'purple=u', 'red=e', 'white=w', 'yellow=y'],
                 help="Color de las lamelas"
             )
         
@@ -114,35 +114,35 @@ def main():
             # Raíz del tallo
             stalk_root = st.selectbox(
                 "Raíz del tallo",
-                ['', 'bulbous=b', 'club=c', 'cup=u', 'equal=e', 'rhizomorphs=z', 'rooted=r', 'missing=?'],
+                [ 'bulbous=b', 'club=c', 'cup=u', 'equal=e', 'rhizomorphs=z', 'rooted=r', 'missing=?'],
                 help="Tipo de raíz del tallo"
             )
             
             # Superficie del tallo sobre el anillo
             stalk_surface_above_ring = st.selectbox(
                 "Superficie del tallo (sobre anillo)",
-                ['', 'fibrous=f', 'scaly=y', 'silky=k', 'smooth=s'],
+                [ 'fibrous=f', 'scaly=y', 'silky=k', 'smooth=s'],
                 help="Textura del tallo arriba del anillo"
             )
             
             # Superficie del tallo bajo el anillo
             stalk_surface_below_ring = st.selectbox(
                 "Superficie del tallo (bajo anillo)",
-                ['', 'fibrous=f', 'scaly=y', 'silky=k', 'smooth=s'],
+                [ 'fibrous=f', 'scaly=y', 'silky=k', 'smooth=s'],
                 help="Textura del tallo abajo del anillo"
             )
             
             # Color del tallo sobre el anillo
             stalk_color_above_ring = st.selectbox(
                 "Color del tallo (sobre anillo)",
-                ['', 'brown=n', 'buff=b', 'cinnamon=c', 'gray=g', 'orange=o', 'pink=p', 'red=e', 'white=w', 'yellow=y'],
+                [ 'brown=n', 'buff=b', 'cinnamon=c', 'gray=g', 'orange=o', 'pink=p', 'red=e', 'white=w', 'yellow=y'],
                 help="Color del tallo arriba del anillo"
             )
             
             # Color del tallo bajo el anillo
             stalk_color_below_ring = st.selectbox(
                 "Color del tallo (bajo anillo)",
-                ['', 'brown=n', 'buff=b', 'cinnamon=c', 'gray=g', 'orange=o', 'pink=p', 'red=e', 'white=w', 'yellow=y'],
+                [ 'brown=n', 'buff=b', 'cinnamon=c', 'gray=g', 'orange=o', 'pink=p', 'red=e', 'white=w', 'yellow=y'],
                 help="Color del tallo abajo del anillo"
             )
         
@@ -154,14 +154,14 @@ def main():
             # Tipo de anillo
             ring_type = st.selectbox(
                 "Tipo de anillo",
-                ['', 'cobwebby=c', 'evanescent=e', 'flaring=f', 'large=l', 'none=n', 'pendant=p', 'sheathing=s', 'zone=z'],
+                [ 'cobwebby=c', 'evanescent=e', 'flaring=f', 'large=l', 'none=n', 'pendant=p', 'sheathing=s', 'zone=z'],
                 help="Forma del anillo"
             )
             
             # Color de impresión de esporas
             spore_print_color = st.selectbox(
                 "Color de impresión de esporas",
-                ['', 'black=k', 'brown=n', 'buff=b', 'chocolate=h', 'green=r', 'orange=o', 'purple=u', 'red=e', 'white=w', 'yellow=y'],
+                [ 'black=k', 'brown=n', 'buff=b', 'chocolate=h', 'green=r', 'orange=o', 'purple=u', 'red=e', 'white=w', 'yellow=y'],
                 help="Color de la impresión de esporas"
             )
         
@@ -169,14 +169,14 @@ def main():
             # Población
             population = st.selectbox(
                 "Población",
-                ['', 'abundant=a', 'clustered=c', 'numerous=n', 'scattered=s', 'several=v', 'solitary=y'],
+                [ 'abundant=a', 'clustered=c', 'numerous=n', 'scattered=s', 'several=v', 'solitary=y'],
                 help="Cómo crecen los hongos"
             )
             
             # Hábitat
             habitat = st.selectbox(
                 "Hábitat",
-                ['', 'grasses=g', 'leaves=l', 'meadows=m', 'paths=p', 'urban=u', 'waste=w', 'woods=d'],
+                [ 'grasses=g', 'leaves=l', 'meadows=m', 'paths=p', 'urban=u', 'waste=w', 'woods=d'],
                 help="Lugar donde crece el hongo"
             )
         
